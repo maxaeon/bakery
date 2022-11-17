@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bell's Bakery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a dark blue background color and some padding to the footer */
+    footer {
+      background-color: pink;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 80%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Bell's Bakery</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Specialties">Specialties</a></li>
+        <li><a href="#Order">Prices</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center">
+  <br>
+  <h1><strong>Bell's Bakery</strong></h1>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4" id="About">
+      <img src="bakery.jpg" class="img-responsive" style="width:100%" alt="bakery"><br><p>The former location of Bell's Bakery</p><br>
+      <h3>About Bell's Bakery</h3><br>
+      <p>Formerly located in Romeo, Bell now makes small batches for individual orders.
+      </p>   
+    </div>
+      <div class="col-sm-4" id="Specialties"> 
+
+      <h3>Specialties</h3>
+        <p><br>Cakes
+          <br><img src=dino.jpg style="width:75%" alt="dino cake">
+          <br>
+          <br><img src=fish.jpg style="width:75%" alt="fish cake">
+          <br>
+          Bagels<br>
+          <img src=bagels.jpg style="width:75%" alt="bagels">
+      </p>  
+    </div>
+      <div class="col-sm-4"  id="Order"> 
+      <img src="bell.jpg" style="width:100%" alt="Bell"></a><br>
+      <h3>Want to request a quote? Reach out today!</h3>
+      <br><p>Contact Bell:
+      <a href="tel:+5863488232">(586)348-8232</a>
+      <br><a href = "mailto: ________________">Send Email--coming soon!</a></p> 
+    </div>
+  </div>
+</div><br>
+  
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="patisserie.jpg" alt="baked goods"><br>
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+    </div>
+</div>
+<br>
+<footer class="container-fluid text-center">
+  <p>Website by <a href="https://github.com/maxaeon">MaxAeon</a> 2022</p>
+</footer>
+
+</body>
+</html>
